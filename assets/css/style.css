@@ -39,3 +39,24 @@ input{
 td span{
   cursor: pointer;
 }
+
+.ex-10-icon{
+  animation: turn360degrees 1.0s linear infinite;
+}
+@keyframes turn360degrees{
+  0%{
+    transform: rotate(1turn);
+  }
+}
+
+h1{
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  line-height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgba(126, 64, 246, 1),
+    rgba(80, 139, 252, 1)
+  );
+}

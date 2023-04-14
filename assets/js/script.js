@@ -4,28 +4,29 @@ createApp({
   data(){
     return{
       tasks:[
-          {
-            text: "prova 1",
-            done: false
-          },
-          {
-            text: "prova 2",
-            done: true
-          },
-          {
-            text: "prova 3",
-            done: true
-          },
-          {
-            text: "prova 4",
-            done: true
-          },
-          {
-            text: "prova 5",
-            done: true
-          }
+          // {
+          //   text: "prova 1",
+          //   done: false
+          // },
+          // {
+          //   text: "prova 2",
+          //   done: true
+          // },
+          // {
+          //   text: "prova 3",
+          //   done: true
+          // },
+          // {
+          //   text: "prova 4",
+          //   done: true
+          // },
+          // {
+          //   text: "prova 5",
+          //   done: true
+          // }
       ],
-      addTaskString: ""
+      addTaskString: "",
+      loading: true
     }
   },
 
@@ -43,5 +44,13 @@ createApp({
       this.tasks.unshift(addTask)
     }
 
+  },
+
+  mounted(){
+    setTimeout(()=>{
+      this.loading = false
+    }, 3000)
   }
+
+
 }).mount("#app")
