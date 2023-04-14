@@ -33,4 +33,9 @@ input{
 
 .done{
   text-decoration: line-through;
+  
 } 
+
+td span{
+  cursor: pointer;
+}
