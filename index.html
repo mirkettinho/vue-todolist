@@ -24,8 +24,8 @@
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-todo-list/check1.webp"
                   alt="Check" width="60">
                 <h2 class="my-4">Task List</h2>
-                <input class="rounded-8" type="text" placeholder="New Task....">
-                <button class="btn btn-primary">Add</button>
+                <input v-model="addTaskString"  @keyup.enter="aggiungi"  class="rounded-8" type="text" placeholder="New Task....">
+                <button @click="aggiungi" class="btn btn-primary">Add</button>
               </div>
   
               <table class="table text-white mb-0">

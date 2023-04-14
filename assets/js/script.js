@@ -24,7 +24,8 @@ createApp({
             text: "prova 5",
             done: true
           }
-      ]
+      ],
+      addTaskString: ""
     }
   },
 
@@ -32,6 +33,14 @@ createApp({
 
     deleteTask(index){
       this.tasks.splice(index, 1)
+    },
+
+    aggiungi(){
+      const addTask = {
+        text: this.addTaskString,
+        done: false
+      }
+      this.tasks.unshift(addTask)
     }
 
   }
